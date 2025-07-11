@@ -19,9 +19,6 @@
 [submodule "foundry.cowboy-henk"]
 	path = foundry.cowboy-henk
 	url = https://gitlab.constantvzw.org/osp/foundry.cowboy-henk
-[submodule "foundry.dlf"]
-	path = foundry.dlf
-	url = https://gitlab.constantvzw.org/osp/foundry.dlf
 [submodule "foundry.div"]
 	path = foundry.div
 	url = https://gitlab.constantvzw.org/osp/foundry.div
@@ -37,12 +34,6 @@
 [submodule "foundry.libertinage"]
 	path = foundry.libertinage
 	url = https://gitlab.constantvzw.org/osp/foundry.libertinage
-[submodule "foundry.limousine"]
-	path = foundry.limousine
-	url = https://gitlab.constantvzw.org/osp/foundry.limousine
-[submodule "foundry.logisoso"]
-	path = foundry.logisoso
-	url = https://gitlab.constantvzw.org/osp/foundry.logisoso
 [submodule "foundry.metafont"]
 	path = foundry.metafont
 	url = https://gitlab.constantvzw.org/osp/foundry.metafont
@@ -118,9 +109,6 @@
 [submodule "Daubenton"]
 	path = Daubenton
 	url = https://github.com/velvetyne/Daubenton
-[submodule "marcel"]
-	path = marcel
-	url = https://github.com/velvetyne/marcel
 [submodule "pilowlava"]
 	path = pilowlava
 	url = https://gitlab.com/StudioTriple/pilowlava
@@ -163,21 +151,9 @@
 [submodule "sniglet"]
 	path = sniglet
 	url = https://github.com/theleagueof/sniglet
-[submodule "league-gothic"]
-	path = league-gothic
-	url = https://github.com/theleagueof/league-gothic
 [submodule "league-spartan"]
 	path = league-spartan
 	url = https://github.com/theleagueof/league-spartan
-[submodule "the-neue-black"]
-	path = the-neue-black
-	url = https://github.com/theleagueof/the-neue-black
-[submodule "league-mono"]
-	path = league-mono
-	url = https://github.com/theleagueof/league-mono
-[submodule "raleway"]
-	path = raleway
-	url = https://github.com/theleagueof/raleway
 [submodule "chunk"]
 	path = chunk
 	url = https://github.com/theleagueof/chunk
