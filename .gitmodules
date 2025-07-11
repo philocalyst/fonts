@@ -1,0 +1,222 @@
+[submodule "foundry.alfphabet"]
+	path = foundry.alfphabet
+	url = https://gitlab.constantvzw.org/osp/foundry.alfphabet
+[submodule "foundry.ax-28-script"]
+	path = foundry.ax-28-script
+	url = https://gitlab.constantvzw.org/osp/foundry.ax-28-script
+[submodule "foundry.belogodor"]
+	path = foundry.belogodor
+	url = https://gitlab.constantvzw.org/osp/foundry.belogodor
+[submodule "foundry.belgica-belgika"]
+	path = foundry.belgica-belgika
+	url = https://gitlab.constantvzw.org/osp/foundry.belgica-belgika
+[submodule "foundry.certegeska"]
+	path = foundry.certegeska
+	url = https://gitlab.constantvzw.org/osp/foundry.certegeska
+[submodule "foundry.cimatics"]
+	path = foundry.cimatics
+	url = https://gitlab.constantvzw.org/osp/foundry.cimatics
+[submodule "foundry.cowboy-henk"]
+	path = foundry.cowboy-henk
+	url = https://gitlab.constantvzw.org/osp/foundry.cowboy-henk
+[submodule "foundry.dlf"]
+	path = foundry.dlf
+	url = https://gitlab.constantvzw.org/osp/foundry.dlf
+[submodule "foundry.div"]
+	path = foundry.div
+	url = https://gitlab.constantvzw.org/osp/foundry.div
+[submodule "foundry.erbarre"]
+	path = foundry.erbarre
+	url = https://gitlab.constantvzw.org/osp/foundry.erbarre
+[submodule "foundry.fluxisch-else"]
+	path = foundry.fluxisch-else
+	url = https://gitlab.constantvzw.org/osp/foundry.fluxisch-else
+[submodule "foundry.le-patin-helvete"]
+	path = foundry.le-patin-helvete
+	url = https://gitlab.constantvzw.org/osp/foundry.le-patin-helvete
+[submodule "foundry.libertinage"]
+	path = foundry.libertinage
+	url = https://gitlab.constantvzw.org/osp/foundry.libertinage
+[submodule "foundry.limousine"]
+	path = foundry.limousine
+	url = https://gitlab.constantvzw.org/osp/foundry.limousine
+[submodule "foundry.logisoso"]
+	path = foundry.logisoso
+	url = https://gitlab.constantvzw.org/osp/foundry.logisoso
+[submodule "foundry.metafont"]
+	path = foundry.metafont
+	url = https://gitlab.constantvzw.org/osp/foundry.metafont
+[submodule "foundry.mill"]
+	path = foundry.mill
+	url = https://gitlab.constantvzw.org/osp/foundry.mill
+[submodule "foundry.notcouriersans"]
+	path = foundry.notcouriersans
+	url = https://gitlab.constantvzw.org/osp/foundry.notcouriersans
+[submodule "foundry.osp-din"]
+	path = foundry.osp-din
+	url = https://gitlab.constantvzw.org/osp/foundry.osp-din
+[submodule "foundry.philibert"]
+	path = foundry.philibert
+	url = https://gitlab.constantvzw.org/osp/foundry.philibert
+[submodule "foundry.metadin"]
+	path = foundry.metadin
+	url = https://gitlab.constantvzw.org/osp/foundry.metadin
+[submodule "foundry.polsku"]
+	path = foundry.polsku
+	url = https://gitlab.constantvzw.org/osp/foundry.polsku
+[submodule "foundry.reglo"]
+	path = foundry.reglo
+	url = https://gitlab.constantvzw.org/osp/foundry.reglo
+[submodule "foundry.sans-guilt"]
+	path = foundry.sans-guilt
+	url = https://gitlab.constantvzw.org/osp/foundry.sans-guilt
+[submodule "foundry.work-avec"]
+	path = foundry.work-avec
+	url = https://gitlab.constantvzw.org/osp/foundry.work-avec
+[submodule "foundry.crickx"]
+	path = foundry.crickx
+	url = https://gitlab.constantvzw.org/osp/foundry.crickx
+[submodule "foundry.ume"]
+	path = foundry.ume
+	url = https://gitlab.constantvzw.org/osp/foundry.ume
+[submodule "foundry.titra"]
+	path = foundry.titra
+	url = https://gitlab.constantvzw.org/osp/foundry.titra
+[submodule "Sporting-Grotesque"]
+	path = Sporting-Grotesque
+	url = https://github.com/velvetyne/Sporting-Grotesque
+[submodule "Typefesse"]
+	path = Typefesse
+	url = https://github.com/velvetyne/Typefesse
+[submodule "saintjean"]
+	path = saintjean
+	url = https://github.com/velvetyne/saintjean
+[submodule "courrrier"]
+	path = courrrier
+	url = https://github.com/velvetyne/courrrier
+[submodule "runic"]
+	path = runic
+	url = https://github.com/velvetyne/runic
+[submodule "Lment_"]
+	path = Lment_
+	url = https://github.com/velvetyne/Lment_
+[submodule "Mourier"]
+	path = Mourier
+	url = https://github.com/velvetyne/Mourier
+[submodule "Victorianna"]
+	path = Victorianna
+	url = https://github.com/velvetyne/Victorianna
+[submodule "Hangul"]
+	path = Hangul
+	url = https://github.com/velvetyne/Hangul
+[submodule "Format_1452"]
+	path = Format_1452
+	url = https://github.com/velvetyne/Format_1452
+[submodule "Boeticher"]
+	path = Boeticher
+	url = https://github.com/velvetyne/Boeticher
+[submodule "Daubenton"]
+	path = Daubenton
+	url = https://github.com/velvetyne/Daubenton
+[submodule "marcel"]
+	path = marcel
+	url = https://github.com/velvetyne/marcel
+[submodule "pilowlava"]
+	path = pilowlava
+	url = https://gitlab.com/StudioTriple/pilowlava
+[submodule "Ouvrieres"]
+	path = Ouvrieres
+	url = https://github.com/laureazz/Ouvrieres
+[submodule "junction"]
+	path = junction
+	url = https://github.com/theleagueof/junction
+[submodule "ostrich-sans"]
+	path = ostrich-sans
+	url = https://github.com/theleagueof/ostrich-sans
+[submodule "fanwood"]
+	path = fanwood
+	url = https://github.com/theleagueof/fanwood
+[submodule "sorts-mill-goudy"]
+	path = sorts-mill-goudy
+	url = https://github.com/theleagueof/sorts-mill-goudy
+[submodule "goudy-bookletter-1911"]
+	path = goudy-bookletter-1911
+	url = https://github.com/theleagueof/goudy-bookletter-1911
+[submodule "orbitron"]
+	path = orbitron
+	url = https://github.com/theleagueof/orbitron
+[submodule "blackout"]
+	path = blackout
+	url = https://github.com/theleagueof/blackout
+[submodule "linden-hill"]
+	path = linden-hill
+	url = https://github.com/theleagueof/linden-hill
+[submodule "prociono"]
+	path = prociono
+	url = https://github.com/theleagueof/prociono
+[submodule "knewave"]
+	path = knewave
+	url = https://github.com/theleagueof/knewave
+[submodule "league-script-number-one"]
+	path = league-script-number-one
+	url = https://github.com/theleagueof/league-script-number-one
+[submodule "sniglet"]
+	path = sniglet
+	url = https://github.com/theleagueof/sniglet
+[submodule "league-gothic"]
+	path = league-gothic
+	url = https://github.com/theleagueof/league-gothic
+[submodule "league-spartan"]
+	path = league-spartan
+	url = https://github.com/theleagueof/league-spartan
+[submodule "the-neue-black"]
+	path = the-neue-black
+	url = https://github.com/theleagueof/the-neue-black
+[submodule "league-mono"]
+	path = league-mono
+	url = https://github.com/theleagueof/league-mono
+[submodule "raleway"]
+	path = raleway
+	url = https://github.com/theleagueof/raleway
+[submodule "chunk"]
+	path = chunk
+	url = https://github.com/theleagueof/chunk
+[submodule "Bagnard"]
+	path = Bagnard
+	url = https://github.com/sebsan/Bagnard
+[submodule "Cotham"]
+	path = Cotham
+	url = https://github.com/sebsan/Cotham
+[submodule "Reglo"]
+	path = Reglo
+	url = https://github.com/sebsan/Reglo
+[submodule "GapSans"]
+	path = GapSans
+	url = https://github.com/Interstices-/GapSans
+[submodule "junicode"]
+	path = junicode
+	url = https://github.com/Fromager/junicode
+[submodule "inter"]
+	path = inter
+	url = https://github.com/rsms/inter/
+[submodule "Libre-Baskerville"]
+	path = Libre-Baskerville
+	url = https://github.com/impallari/Libre-Baskerville
+[submodule "Office-Code-Pro"]
+	path = Office-Code-Pro
+	url = https://github.com/nathco/Office-Code-Pro
+[submodule "OswaldFont"]
+	path = OswaldFont
+	url = https://github.com/vernnobile/OswaldFont
+[submodule "poppins"]
+	path = poppins
+	url = https://github.com/itfoundry/poppins
+[submodule "Whois-mono"]
+	path = Whois-mono
+	url = https://github.com/raphaelbastide/Whois-mono
+[submodule "steps-mono"]
+	path = steps-mono
+	url = https://github.com/raphaelbastide/steps-mono
+[submodule "Work-Sans"]
+	path = Work-Sans
+	url = https://github.com/weiweihuanghuang/Work-Sans
