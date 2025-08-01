@@ -66,6 +66,7 @@ function main
         end
     end
 
+    compress_dirs $dist_dir
     echo "Done. Fonts in '$dist_dir'."
 end
 
@@ -115,6 +116,23 @@ function process_font -a file family out_sub
     cp $file $dst \
         && echo "Copied: '$file' → '$dst'" \
         || echo "Error: failed to copy '$file'" >&2
+end
+
+function compress_dirs -a input
+ set input_dir $input
+ if test (count $argv) -ge 1
+     echo "Please specificy an input"
+ end
+
+ # Make sure this happens in the right place
+ cd $input_dir
+
+ set input_dirs (find $input_dir -maxdepth 1 )
+
+ for file in $input_dirs
+  set innards (find $file -maxdepth 1)
+  tar -czvf $file.tar.gzip $innards
+ end
 end
 
 # entrypoint
