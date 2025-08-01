@@ -1,0 +1,40 @@
+name: Publish dist to GitHub Releases
+
+on:
+  push:
+    tags:
+      - '*'        # run on any tag push
+
+permissions:
+  contents: write  # allow creating/updating releases & uploading assets
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: publish-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0      # fetch all history & tags
+
+      - name: Install Fish shell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fish
+
+      - name: Run font.fish
+        run: fish font.fish
+
+      - name: Create GitHub Release & upload dist/
+        uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          directory: dist
