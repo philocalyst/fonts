@@ -1,10 +1,5 @@
 #!/usr/bin/env /home/miles/fish-shell/target/release/fish
 
-# font-extractor.fish
-# Recursively find font files in each top‐level dir, rename to
-# <family>-<modifier>.<ext>, and copy into dist/<family>/ with
-# collision‐proofing.
-
 # common extensions
 set -x font_exts ttf otf woff2 woff eot
 
@@ -56,7 +51,6 @@ function main
 
         # build find args: -type f \( -iname *.ttf -o -iname *.otf … \)
         set find_args -type f '('
-        echo $font_exts
         for ext in $font_exts
             set find_args $find_args -iname "*.$ext" -o
         end
@@ -66,7 +60,6 @@ function main
         set find_args $find_args ')'
 
         # run find
-        echo $find_args
         set font_files (command find $dir $find_args)
         for file in $font_files
             process_font $file $family $out_sub
