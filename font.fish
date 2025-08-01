@@ -131,7 +131,7 @@ function compress_dirs --argument-names parent_dir
 
     for d in "$parent_dir"/*/
         set name (basename "$d")
-        tar -czvf "$parent_dir/$name.tar.gz" -C "$d" .
+        tar -czvf "$parent_dir/$name.tgz" -C "$d" .
     end
 end
 
