@@ -118,21 +118,21 @@ function process_font -a file family out_sub
         || echo "Error: failed to copy '$file'" >&2
 end
 
-function compress_dirs -a input
- set input_dir $input
- if test (count $argv) -ge 1
-     echo "Please specificy an input"
- end
+function compress_dirs --argument-names parent_dir
+    if test (count $argv) -lt 1
+        echo "Usage: compress_dirs <parent_directory>"
+        return 1
+    end
 
- # Make sure this happens in the right place
- cd $input_dir
+    if not test -d "$parent_dir"
+        echo "Error: '$parent_dir' is not a directory"
+        return 2
+    end
 
- set input_dirs (find $input_dir -maxdepth 1 )
-
- for file in $input_dirs
-  set innards (find $file -maxdepth 1)
-  tar -czvf $file.tar.gzip $innards
- end
+    for d in "$parent_dir"/*/
+        set name (basename "$d")
+        tar -czvf "$parent_dir/$name.tar.gz" -C "$d" .
+    end
 end
 
 # entrypoint
