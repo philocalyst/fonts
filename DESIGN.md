@@ -2,27 +2,27 @@
 
 ## Media
 
-*   All global, font-family media will lie in the `Assets/` directory. Here this means any documentation, specimens, photos, etc., that are meaningful in context to the **collection** of fonts. Pairings are a good example.
-    *   **Media Naming:** Global media files should follow a convention such as `[font_family_name]_[media_type].[ext]` (e.g., `MyFont_pairing.jpg`).
-    *   **Image Formats:** Images should primarily be JPEGs (for photos) or PNGs (for illustrations/screenshots). Vector assets should be SVGs. Recommended resolution for display is 1920px on the longest side.
-*   Any media that is specific to a family member should lie in **that** directory.
-    *   **Media Naming:** Family member-specific media should follow a convention such as `[family_member_name]_[media_type].[ext]` (e.g., `MyFont-Regular_specimen_bodycopy.png`).
-    *   **Image Formats:** Same recommendations as global media.
-*   You can assume specimens will be treated differently, as they are meant to be restricted to example usages of the font. Any file prefixed by `specimen` will be read as such.
+-   All global, font-family media will lie in the `Assets/` directory. Here this means any documentation, specimens, photos, etc., that are meaningful in context to the **collection** of fonts. Pairings are a good example.
+    -   **Media Naming:** Global media files should follow a convention such as `[font_family_name]_[media_type].[ext]` (e.g., `MyFont_pairing.jpg`).
+    -   **Image Formats:** Images should primarily be JPEGs (for photos) or PNGs (for illustrations/screenshots). Vector assets should be SVGs. Recommended resolution for display is 1920px on the longest side.
+-   Any media that is specific to a family member should lie in **that** directory.
+    -   **Media Naming:** Family member-specific media should follow a convention such as `[family_member_name]_[media_type].[ext]` (e.g., `MyFont-Regular_specimen_bodycopy.png`).
+    -   **Image Formats:** Same recommendations as global media.
+-   You can assume specimens will be treated differently, as they are meant to be restricted to example usages of the font. Any file prefixed by `specimen` will be read as such.
 
 ## Source Files
 
 There exists no compiled, ready-to-use font files under versioning. Every font is defined by its UFO (Unified Font Object) file, which is, effectively, a series of property list and XML files that describe how each glyph should be laid out.
 
-*   Within each directory that implements the spec, there will be a `source/` directory.
-    *   The source directory will include a directory for **EACH** family member within the font-family.
-        *   Inside this directory can exist: an `info.toml` override for particular features that have changed within the family, and another `Assets/` folder with family member-specific specimens and documentation.
-            *   **`info.toml` Overrides:** The `info.toml` within a family member directory can override specific keys from the global `info.toml`. Primarily, this is for `description`, `summary`, `publication_date` if a particular style was released much later, and any font-specific features. Other keys like `foundry`, `copyright`, and `designers` are typically global and should not be overridden.
-        *   Inside this directory there **MUST** be the relevant UFO files. They are named by the attributes over the font-family they hold. Like, "Regular.ufo". A mix of attributes is signaled by a joining '+', as in "Regular+Italic.ufo".
+-   Within each directory that implements the spec, there will be a `source/` directory.
+    -   The source directory will include a directory for **EACH** family member within the font-family.
+        -   Inside this directory can exist: an `info.toml` override for particular features that have changed within the family, and another `Assets/` folder with family member-specific specimens and documentation.
+            -   **`info.toml` Overrides:** The `info.toml` within a family member directory can override specific keys from the global `info.toml`. Primarily, this is for `description`, `summary`, `publication_date` if a particular style was released much later, and any font-specific features. Other keys like `foundry`, `copyright`, and `designers` are typically global and should not be overridden.
+        -   Inside this directory there **MUST** be the relevant UFO files. They are named by the attributes over the font-family they hold. Like, "Regular.ufo". A mix of attributes is signaled by a joining '+', as in "Regular+Italic.ufo".
             *   **UFO Versioning:** All UFO files within a given font family **MUST** conform to the UFO 3 OR the UFO 2 specification.
-*   There will also be a `CHANGELOG.md`, which implements the "Keep a Changelog" recommendations.
-*   A `LICENSE.md` file. This **MUST** contain the full text of the Open Font License (OFL) version 1.1.
-*   A `info.toml` which defines the global information for the font-family. The schema is as follows:
+-   There will also be a `CHANGELOG.md`, which implements the "Keep a Changelog" recommendations.
+-   A `LICENSE.md` file. This **MUST** contain the full text of the Open Font License (OFL) version 1.1.
+-   A `info.toml` which defines the global information for the font-family. The schema is as follows:
 
     ```toml
     # info.toml - Global Font Family Information
@@ -90,16 +90,16 @@ There exists no compiled, ready-to-use font files under versioning. Every font i
     role = "Glyph Designer"
     ```
 
-*   A `CONTRIBUTING.md` document that defines how the author intends to process contributors. If not present, the author implicitly agrees to standard community contribution guidelines as determined by the our Rust module's default contribution policy, in which we assume the project is under our organizational responsibility.
+-   A `CONTRIBUTING.md` document that defines how the author intends to process contributors. If not present, the author implicitly agrees to standard community contribution guidelines as determined by the our Rust module's default contribution policy, in which we assume the project is under our organizational responsibility.
 
 ## Consumption
 
 Connecting this all together is a Rust module, that parses the relevant UFO files and, depending on the options given, outputs compiled font files and a JSON lock file that contains the complete manifest of all fonts and their data.
 
-*   You can interface with this program in one of two ways: on the CLI or through a published GitHub Action.
-*   The `font_builder` can output to `ttf`, `ttc`, `woff`, or SVGs (Although the SVGs will probably never be used and output as individual glyph SVGs within a dedicated directory).
-    *   **Output Naming:** Compiled font files will be named using the convention: `[FontFamilyName]-[StyleName].[ext]` (e.g., `MyFont-Regular.ttf`, `MyFont-Italic.woff`). For TTC files, the name will be `[FontFamilyName].ttc`.
-*   The outputted JSON lock file is more or less a reflection of the `info.toml`, but with some extra properties that are best computed dynamically. This JSON file serves as the definitive manifest for the released font family. Its schema is as follows:
+-   You can interface with this program in one of two ways: on the CLI or through a published GitHub Action.
+-   The `font_builder` can output to `ttf`, `ttc`, `woff`, or SVGs (Although the SVGs will probably never be used and output as individual glyph SVGs within a dedicated directory).
+    -   **Output Naming:** Compiled font files will be named using the convention: `[FontFamilyName]-[StyleName].[ext]` (e.g., `MyFont-Regular.ttf`, `MyFont-Italic.woff`). For TTC files, the name will be `[FontFamilyName].ttc`.
+-   The outputted JSON lock file is more or less a reflection of the `info.toml`, but with some extra properties that are best computed dynamically. This JSON file serves as the definitive manifest for the released font family. Its schema is as follows:
 
     ```json
     {
@@ -207,7 +207,7 @@ Connecting this all together is a Rust module, that parses the relevant UFO file
     }
     ```
 
-    *   **Input Validation:** The `font_builder` module will perform strict validation on all `info.toml` files against the defined schemas and on UFO files to ensure adherence to the UFO 2/3 specification and consistency across the family. Errors will halt compilation with descriptive messages.
+    -   **Input Validation:** The `font_builder` module will perform strict validation on all `info.toml` files against the defined schemas and on UFO files to ensure adherence to the UFO 2/3 specification and consistency across the family. Errors will halt compilation with descriptive messages.
 
 Every repository that implements this standard should have a `.fontfamily` extension (e.g., `my-font.fontfamily`), and be tagged with that relevant tag in its repository topics for discovery and validation. If you're using the GitHub Action, it will automatically create all possible artifacts and compress them as a `.tgz` for others to consume from the releases page. The manifest information is found in the same place.
 
