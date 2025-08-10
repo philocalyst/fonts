@@ -1,5 +1,7 @@
 # A Font Distribution Specification
 
+This is a demo repository for this specification. Eventually every submodule here will follow this specification. Each repository is in varying stages of conversion (Most have not even begun).
+
 ## Media
 
 -   All global, font-family media will lie in the `Assets/` directory. Here this means any documentation, specimens, photos, etc., that are meaningful in context to the **collection** of fonts. Pairings are a good example.
