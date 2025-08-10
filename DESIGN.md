@@ -6,7 +6,7 @@
     -   **Media Naming:** Global media files should follow a convention such as `[font_family_name]_[media_type].[ext]` (e.g., `MyFont_pairing.jpg`).
     -   **Image Formats:** Images should primarily be JPEGs (for photos) or PNGs (for illustrations/screenshots). Vector assets should be SVGs. Recommended resolution for display is 1920px on the longest side.
 -   Any media that is specific to a family member should lie in **that** directory.
-    -   **Media Naming:** Family member-specific media should follow a convention such as `[family_member_name]_[media_type].[ext]` (e.g., `MyFont-Regular_specimen_bodycopy.png`).
+    -   **Media Naming:** Family member-specific media should follow a convention such as `[media_type]_<optional>[description].[ext]` (e.g., `specimen.png`). Family-name should be inferred by the parent directory. If you have many of a particular media-type, say specimen, then you may name a folder that data type, and any files contained inside will be assumed to share that data type.
     -   **Image Formats:** Same recommendations as global media.
 -   You can assume specimens will be treated differently, as they are meant to be restricted to example usages of the font. Any file prefixed by `specimen` will be read as such.
 
